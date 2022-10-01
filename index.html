@@ -1,0 +1,51 @@
+<html>
+     <head>
+         <meta charset="UTF-8">
+		 <title> Sistema Acadêmico - Etec </title>
+		 <link rel="stylesheet" href="style.css">
+     </head>
+     <body background="Livro.jpg">
+         <h1 > Sistema Acadêmico - Etec </h1>
+		 <form action="sistema.php" method="POST">
+		 <fieldset>
+		      <legend><b> Dados cadastrais</b> </legend>
+			  <table >
+			     <tr>
+				     <th> Nome: </th>
+					 <td> <input type="text" name="nome" size="70"> </td>
+			     
+					<th> Gênero: </th>
+					<td> <select name="genero" > 
+							<option> </option>
+							<option> Masculino </option>
+							<option> Feminino </option>
+							<option> Outros </option>
+						 </select>
+					</td>
+				    
+				 <tr>
+				   
+					 <th> E-mail: </th>
+					 <td> <input type="email" name="email" size="50"> </td>
+			         
+					 <th> Senha: </th>
+					 <td> <input type="password" name="senha" size="10"> </td>
+				   
+				 </tr>
+				 <tr>
+					 <th>Função: </th>
+					 <td> <input type="radio" name="funcao"  value = "admin"> Administrativo 
+						  <input type="radio" name="funcao"  value = "alu" > Aluno
+						  <input type="radio" name="funcao"  value = "prof" > Professor</td>
+				
+					 <th> Data de nascimento : </th>
+					 <td> <input type="date" name="data_nasc" ></td>
+				 </tr>
+			  </table>
+		 </fieldset>
+           <br>
+		  <input type="submit" name= "cadastrar" value="Cadastrar">
+		  <input type="reset" name= "limpar" value="Limpar">
+		 </form>	 
+     </body>
+</html>
